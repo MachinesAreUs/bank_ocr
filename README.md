@@ -4,7 +4,7 @@ Solution to the [Bank OCR Kata](https://codingdojo.org/kata/BankOCR/)
 
 ## Running
 
-The whole thing can be run fro iex. For example:
+The whole thing can be run from iex. For example:
 
 ```elixir
 iex(1)> BankOCR.process("./data/accounts.txt")
