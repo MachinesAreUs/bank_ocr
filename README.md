@@ -1,3 +1,5 @@
+![Elixir CI](https://github.com/MachinesAreUs/bank_ocr/workflows/Elixir%20CI/badge.svg)
+
 # Bank OCR
 
 Solution to the [Bank OCR Kata](https://codingdojo.org/kata/BankOCR/)
