@@ -1,4 +1,8 @@
 defmodule BankOCR.Digit do
+  @zero " _ " <>
+        "| |" <>
+        "|_|"
+
   @one "   " <>
        "  |" <>
        "  |"
@@ -36,6 +40,7 @@ defmodule BankOCR.Digit do
         " _|"
 
   @digits %{
+    @zero => "0",
     @one => "1",
     @two => "2",
     @three => "3",
