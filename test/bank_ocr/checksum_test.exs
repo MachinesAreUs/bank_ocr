@@ -36,4 +36,3 @@ defmodule BankOCR.ChecksumTest do
     end
   end)
 end
-

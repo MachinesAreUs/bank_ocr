@@ -9,7 +9,7 @@ defmodule BankOCR.Checksum do
     |> Enum.map(&String.to_integer/1)
     |> Enum.zip(9..1)
     |> Enum.map(fn {x, y} -> x * y end)
-    |> Enum.sum
+    |> Enum.sum()
     |> rem(11)
   end
 end

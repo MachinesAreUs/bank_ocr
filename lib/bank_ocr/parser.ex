@@ -23,7 +23,7 @@ defmodule BankOCR.Parser do
     |> Enum.drop((n - 1) * 3)
     |> Enum.take(3)
     |> Enum.map(&Tuple.to_list(&1))
-    |> Util.Matrix.transpose
+    |> Util.Matrix.transpose()
     |> Enum.join()
   end
 end
