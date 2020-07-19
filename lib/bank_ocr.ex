@@ -3,12 +3,10 @@ defmodule BankOCR do
     file_path
     |> BankOCR.Reader.from_file()
     |> Enum.map(&BankOCR.Evaluator.evaluate/1)
-    |> print()
+    |> Enum.each(&print/1)
   end
 
-  def print(items) do
-    Enum.each(items, fn {account, status} ->
-      IO.puts("#{account} #{status}")
-    end)
+  def print({account, evaluation}) do
+    IO.puts("#{account} #{evaluation}")
   end
 end

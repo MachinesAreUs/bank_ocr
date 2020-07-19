@@ -1,21 +1,28 @@
-# BankOcr
+# Bank OCR
 
-**TODO: Add description**
+Solution to the [Bank OCR Kata](https://codingdojo.org/kata/BankOCR/)
 
-## Installation
+## Running
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `bank_ocr` to your list of dependencies in `mix.exs`:
+The whole thing can be run fro iex. For example:
 
 ```elixir
-def deps do
-  [
-    {:bank_ocr, "~> 0.1.0"}
-  ]
-end
+iex(1)> BankOCR.process("./data/accounts.txt")
+123456789 OK
+912345678 ERR
+891234567 ERR
+789123456 ERR
+678912345 ERR
+000000000 OK
+:ok
+
+iex(2)> BankOCR.process("./data/accounts_illegible.txt")
+?23456789 ILL
+9?2345678 ILL
+89?234567 ILL
+789?23456 ILL
+6789?2345 ILL
+:ok
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/bank_ocr](https://hexdocs.pm/bank_ocr).
-
+There are also lots of tests for individual modules. Coverage is more than 80%.
