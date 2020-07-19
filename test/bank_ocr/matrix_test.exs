@@ -1,6 +1,6 @@
-defmodule Util.MatrixTest do
+defmodule BankOCR.MatrixTest do
   use ExUnit.Case
-  alias Util.Matrix
+  alias BankOCR.Matrix
 
   test "transposes 3x3 matrix" do
     orig = [

@@ -1,4 +1,4 @@
-defmodule Util.Matrix do
+defmodule BankOCR.Matrix do
   def transpose([]), do: []
   def transpose([[] | _]), do: []
   def transpose(a) do
